@@ -29,7 +29,7 @@ jobs:
       id: docker_meta
       uses: docker/metadata-action@v5
       with:
-        images: anastasia829/netflix:latest
+        images: anastasia829/netflix
         flavor: |
           latest=true
         tags: |
@@ -64,3 +64,4 @@ jobs:
       run: |
         kubectl apply -f netflix-deployment.yaml
         kubectl apply -f netflix-svc.yaml
+
